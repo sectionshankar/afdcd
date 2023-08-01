@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>আরবিট্রেজ স্ক্যানার</title>
+</head>
+<body class="bg-gray-600">
+    
+    <div class="header">
+        <h1 class="text-center text-lg font-bold bg-cyan-300 p-5 mb-4">আরবিট্রেজ স্ক্যানার</h1>
+    </div>
+    <div class="text-alert text-center">
+    </div>
+    
+    <div>
+        <h2 class="text-center my-8 text-2xl">Set alert limit</h2>
+        <div class="flex justify-center gap-8 mb-10">
+            <input class="rounded outline-none" type="text">
+            <button class="bg-green-600 px-10 py-2 rounded-lg hover:bg-green-500" onclick="setLimit()" type="submit">Set</button>
+        </div>
+    </div>
+
+    <div class="body-div overflow-auto rounded-lg mx-4 bg-">
+        <table class="table w-full">
+            <thead class="bg-blue-200 border-4 border-black">
+                <tr>
+                    <th class="p-3 border-x-4 border-black text-sm font-semibold tracking-wide text-center">Token</th>
+                    <th class="p-3 border-x-4 border-black text-sm font-semibold tracking-wide text-center">Binance</th>
+                    <th class="p-3 border-x-4 border-black text-sm font-semibold tracking-wide text-center">ThorChain</th>
+                    <th class="p-3 border-x-4 border-black text-sm font-semibold tracking-wide text-center">Binance Price</th>
+                    <th class="p-3 border-x-4 border-black text-sm font-semibold tracking-wide text-center">Thorchain Price</th>
+                    <th class="p-3 border-x-4 border-black text-sm font-semibold tracking-wide text-center">Profit</th>
+                </tr>
+            </thead>
+        </table>
+        <h1 class="no-arb text-center text-3xl font-bold p-10"></h1>
+    </div>
+    
+    <audio class="alert" hidden src="./3_notes_reverb.mp3"></audio>
+    
+</body>
+<script src="./script.js"></script>
+</html>

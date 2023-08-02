@@ -1,6 +1,7 @@
 let alertValue = 10
 
 function checkArb() {
+    alertValue = 10
     const xhr = new XMLHttpRequest()
     const noarb = document.querySelector('.no-arb')
     xhr.open("GET", "https://runeapi.sourov.dev/runeapi")

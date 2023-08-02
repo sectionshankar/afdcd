@@ -1,7 +1,6 @@
 let alertValue = 10
 
 function checkArb() {
-    alertValue = 10
     const xhr = new XMLHttpRequest()
     const noarb = document.querySelector('.no-arb')
     xhr.open("GET", "https://runeapi.sourov.dev/runeapi")
@@ -91,9 +90,9 @@ function setLimit() {
 
 // Call the function when the page loads
 document.addEventListener('DOMContentLoaded', function () {
+    alertValue = 10
     // Call the function initially
     checkArb()
-
     // Call the function every 15 seconds
     setInterval(checkArb, 15000) // 15000 milliseconds = 15 seconds
 })
